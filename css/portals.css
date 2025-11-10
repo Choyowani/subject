@@ -1,0 +1,184 @@
+@font-face {
+  font-family: "GMarketSans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff")
+    format("woff");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GMarketSans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GMarketSans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
+  font-weight: 700;
+  font-display: swap;
+}
+body {
+  background-color: rgb(0, 0, 0);
+  padding: 40px;
+}
+* {
+  box-sizing: border-box;
+  font-family: GMarketSans;
+  margin: 0;
+  padding: 0;
+}
+main {
+  max-width: 600%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  border-radius: 10px;
+  transition: 0.25s;
+}
+img:hover {
+  transform: scale(1.07);
+}
+nav p {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.artist {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.artist a {
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  font-weight: 500;
+  transition: 0.2s;
+  color: #222;
+}
+
+.artist a:hover {
+  background: #222;
+  color: white;
+  border-color: #222;
+}
+
+section {
+  margin-bottom: 45px;
+}
+footer {
+  background-color: #666565;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px auto 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  position: sticky;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  padding: 15px 20px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin: 15px auto;
+  display: flex;
+  gap: 20px;
+  z-index: 1000;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1200px;
+}
+header a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+header a:hover {
+  text-decoration: none;
+  color: rgb(139, 139, 138);
+}
+.blogname {
+  margin-left: auto;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    padding: 30px;
+  }
+  header {
+    max-width: 100%;
+  }
+  main {
+    max-width: 100%;
+    padding: 25px;
+  }
+  footer {
+    max-width: 100%;
+  }
+
+  img {
+    width: 160px;
+    height: 160px;
+  }
+
+  nav p {
+    gap: 35px;
+  }
+
+  .artist {
+    gap: 20px;
+  }
+
+  .artist a {
+    padding: 12px 18px;
+    font-size: 1.05rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 60px;
+  }
+
+  main {
+    max-width: 1200px;
+    padding: 40px;
+  }
+
+  img {
+    width: 180px;
+    height: 180px;
+  }
+
+  nav p {
+    gap: 40px;
+  }
+
+  .artist {
+    gap: 25px;
+  }
+
+  .artist a {
+    padding: 14px 22px;
+    font-size: 1.1rem;
+  }
+}

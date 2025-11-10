@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "GMarketSans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff")
+    format("woff");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GMarketSans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GMarketSans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
+  font-weight: 700;
+  font-display: swap;
+}
+body {
+  background-color: rgb(0, 0, 0);
+  padding: 40px;
+}
+* {
+  box-sizing: border-box;
+  font-family: GMarketSans;
+  margin: 0;
+  padding: 0;
+}
+main {
+  max-width: 600%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+section {
+  margin-bottom: 10px;
+}
+li {
+  list-style-type: none;
+}
+
+footer {
+  background-color: #666565;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px auto 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  position: sticky;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  padding: 15px 20px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin: 15px auto;
+  display: flex;
+  gap: 20px;
+  z-index: 1000;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1200px;
+}
+header a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+header a:hover {
+  text-decoration: none;
+  color: rgb(139, 139, 138);
+}
+.blogname {
+  margin-left: auto;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+main h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.myself {
+  flex: 1;
+}
+
+.img-box {
+  width: 100px;
+  height: 140px;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    padding: 30px;
+  }
+  header {
+    max-width: 100%;
+  }
+  main {
+    max-width: 100%;
+    padding: 25px;
+  }
+  footer {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 60px;
+  }
+
+  main {
+    max-width: 1200px;
+    padding: 40px;
+  }
+}
